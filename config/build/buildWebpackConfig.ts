@@ -14,7 +14,7 @@ export const buildWebpackConfig = (options: IBuildOptions): Configuration => {
       bundle: paths.entry,
     },
     module: {
-      rules: buildLoaders(options)
+      rules: buildLoaders(options),
     },
     resolve: buildResolvers(),
     output: {
@@ -25,5 +25,5 @@ export const buildWebpackConfig = (options: IBuildOptions): Configuration => {
     plugins: buildPlugins(options),
     devtool: isDev ? 'inline-source-map' : undefined,
     devServer: isDev ? buildDevServer(options) : undefined,
-  }
-}
+  };
+};

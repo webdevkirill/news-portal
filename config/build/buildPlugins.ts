@@ -12,6 +12,6 @@ export const buildPlugins = ({ paths }: IBuildOptions): webpack.WebpackPluginIns
     new MiniCssExtract({
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].css',
-    })
-  ]
-}
+    }),
+  ];
+};
