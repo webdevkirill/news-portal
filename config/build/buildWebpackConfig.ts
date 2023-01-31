@@ -1,4 +1,3 @@
-import path from 'path';
 import { Configuration } from 'webpack';
 import { buildDevServer } from './buildDevServer';
 import { buildLoaders } from './buildLoaders';
@@ -15,7 +14,7 @@ export const buildWebpackConfig = (options: IBuildOptions): Configuration => {
       bundle: paths.entry,
     },
     module: {
-      rules: buildLoaders()
+      rules: buildLoaders(options)
     },
     resolve: buildResolvers(),
     output: {
