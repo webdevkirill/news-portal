@@ -19,6 +19,8 @@ export const Sidebar: React.FC<ISidebarProps> = ({ className }) => {
 
   return (
     <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
+      {/* TODO: убрать потом отключение eslint */}
+      {/* eslint-disable-next-line */}
       <button onClick={handleToggleCollapse}>Toggle</button>
 
       <div className={cls.switchers}>

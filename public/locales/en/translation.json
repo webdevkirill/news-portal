@@ -1,3 +1,7 @@
 {
-  "lang": "English"
+  "lang": "English",
+  "navbar": {
+    "home": "Home page",
+    "about": "About page"
+  }
 }
