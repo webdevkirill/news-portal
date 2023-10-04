@@ -1,21 +1,22 @@
 import path from 'path';
 import { buildWebpackConfig } from './config/build/buildWebpackConfig';
-import { IBuildOptions, IBuildPaths } from './config/build/types/config';
+import { IBuildEnv, IBuildOptions, IBuildPaths } from './config/build/types/config';
 
-const paths: IBuildPaths = {
-  entry: path.resolve(__dirname, 'src', 'index.ts'),
-  build: path.resolve(__dirname, 'dist'),
-  html: path.resolve(__dirname, 'public', 'index.html'),
-}
+export default (env: IBuildEnv) => {
+  const paths: IBuildPaths = {
+    entry: path.resolve(__dirname, 'src', 'index.ts'),
+    build: path.resolve(__dirname, 'dist'),
+    html: path.resolve(__dirname, 'public', 'index.html'),
+  }
 
-const mode = 'development';
+  const mode = env.mode ?? 'development';
 
-const options: IBuildOptions = {
-  mode,
-  paths,
-  isDev: mode === 'development',
-}
+  const options: IBuildOptions = {
+    mode,
+    paths,
+    isDev: mode === 'development',
+    port: env.port ?? 3005,
+  }
 
-const config = buildWebpackConfig(options);
-
-export default config;
+  return buildWebpackConfig(options);
+};
