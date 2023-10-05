@@ -1,5 +1,3 @@
-import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
-
 import { RoutePath } from 'shared/config/routerConfig';
 import { classNames } from 'shared/lib/classNames';
 import { AppLink } from 'shared/ui/AppLink';
@@ -16,7 +14,6 @@ export const Navbar: React.FC<INavbarProps> = props => {
 
   return (
     <div className={classNames(cls.navbar, {}, [className])}>
-      <ThemeSwitcher />
       <div className={cls.links}>
         <AppLink theme={AppLinkTheme.SECONDARY} to={RoutePath.main} className={cls.mainLink}>
           Главная
