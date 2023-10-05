@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 import { RoutePath } from 'shared/config/routerConfig';
 import { classNames } from 'shared/lib/classNames';
 import { AppLink } from 'shared/ui/AppLink';
@@ -9,7 +11,7 @@ interface INavbarProps {
   className?: string;
 }
 
-export const Navbar: React.FC<INavbarProps> = props => {
+export const Navbar: FC<INavbarProps> = props => {
   const { className } = props;
 
   return (

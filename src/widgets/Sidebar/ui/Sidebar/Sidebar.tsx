@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { FC, useState } from 'react';
 
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
@@ -12,10 +11,9 @@ interface ISidebarProps {
   className?: string;
 }
 
-export const Sidebar: React.FC<ISidebarProps> = props => {
+export const Sidebar: FC<ISidebarProps> = props => {
   const { className } = props;
   const [collapsed, setCollapsed] = useState(false);
-  const { i18n } = useTranslation();
 
   const handleToggleSidebar = () => {
     setCollapsed(prev => !prev);

@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 import { Theme, useTheme } from 'app/providers/ThemeProvider';
 
 import DarkThemeIcon from 'shared/assets/icons/theme-dark.svg';
@@ -11,7 +13,7 @@ interface IThemeSwitcherProps {
   className?: string;
 }
 
-export const ThemeSwitcher: React.FC<IThemeSwitcherProps> = props => {
+export const ThemeSwitcher: FC<IThemeSwitcherProps> = props => {
   const { className } = props;
   const { theme, handleToggleTheme } = useTheme();
 

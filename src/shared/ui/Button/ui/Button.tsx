@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, FC } from 'react';
 
 import { classNames } from 'shared/lib/classNames';
 
@@ -13,7 +13,7 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: ThemeButton;
 }
 
-export const Button: React.FC<IButtonProps> = props => {
+export const Button: FC<IButtonProps> = props => {
   const { className, children, theme = ThemeButton.CLEAR, ...rest } = props;
 
   return (

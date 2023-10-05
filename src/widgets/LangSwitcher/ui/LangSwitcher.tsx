@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { classNames } from 'shared/lib/classNames';
@@ -9,7 +10,7 @@ interface ILangSwitcherProps {
   className?: string;
 }
 
-export const LangSwitcher: React.FC<ILangSwitcherProps> = props => {
+export const LangSwitcher: FC<ILangSwitcherProps> = props => {
   const { className } = props;
   const { i18n, t } = useTranslation('common');
 
