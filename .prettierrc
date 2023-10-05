@@ -9,6 +9,9 @@
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
   "proseWrap": "always",
-  "importOrder": ["^app/|^pages/|^widgets/|^features/|^entities/|^shared/", "^[./]"],
-  "importOrderSeparation": true
+  "importOrder": ["^app/", "^pages/", "^widgets/", "^features/", "^entities/", "^shared/", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderParserPlugins": ["jsx", "typescript"],
+  "plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
