@@ -1,4 +1,4 @@
-import React from 'react';
+import { createContext } from 'react';
 
 export enum Theme {
   LIGHT = 'light',
@@ -10,6 +10,6 @@ export interface IThemeContextProps {
   setTheme?: (theme: Theme) => void;
 }
 
-export const ThemeContext = React.createContext<IThemeContextProps>({});
+export const ThemeContext = createContext<IThemeContextProps>({});
 
 export const LOCAL_STORAGE_THEME_KEY = 'news-portal-theme';
