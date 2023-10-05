@@ -6,5 +6,5 @@ export const buildDevServer = (options: IBuildOptions): DevServerConfiguration =
     port: options.port,
     open: true,
     historyApiFallback: true,
-  }
-}
+  };
+};

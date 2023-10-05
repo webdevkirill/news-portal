@@ -8,7 +8,7 @@ export default (env: IBuildEnv) => {
     build: path.resolve(__dirname, 'dist'),
     html: path.resolve(__dirname, 'public', 'index.html'),
     src: path.resolve(__dirname, 'src'),
-  }
+  };
 
   const mode = env.mode ?? 'development';
 
@@ -17,7 +17,7 @@ export default (env: IBuildEnv) => {
     paths,
     isDev: mode === 'development',
     port: env.port ?? 3005,
-  }
+  };
 
   return buildWebpackConfig(options);
 };
