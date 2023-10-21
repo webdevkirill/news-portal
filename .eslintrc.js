@@ -34,6 +34,8 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'max-len': ['error', { ignoreComments: true, code: 120 }],
     'react/jsx-wrap-multilines': 'off',
+    'react/jsx-no-useless-fragment': 'off',
+    'no-restricted-globals': 'off',
   },
   globals: {
     __IS_DEV__: true,

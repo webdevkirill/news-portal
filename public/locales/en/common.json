@@ -1,3 +1,7 @@
 {
-  "lang": "en"
+  "lang": "en",
+  "page-error": "Somethimg went wrong",
+  "buttons": {
+    "reload-page": "Reload page"
+  }
 }
