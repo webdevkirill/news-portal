@@ -1,14 +1,10 @@
 {
-  "": "",
   "buttons": {
     "reload-page": "reload-page"
-  },
-  "common": {
-    "page-error": "page-error"
   },
   "notFound": {
     "title": "title"
   },
   "page-error": "page-error",
-  "title": ""
+  "title": "title"
 }
