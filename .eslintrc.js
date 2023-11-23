@@ -16,7 +16,12 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'react/jsx-indent': [2, 2],
-    'react/jsx-filename-extension': [2, { extensions: ['.jsx', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      2,
+      {
+        extensions: ['.jsx', '.tsx'],
+      },
+    ],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'warn',
@@ -32,7 +37,13 @@ module.exports = {
     'no-shadow': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
-    'max-len': ['error', { ignoreComments: true, code: 120 }],
+    'max-len': [
+      'error',
+      {
+        ignoreComments: true,
+        code: 120,
+      },
+    ],
     'react/jsx-wrap-multilines': 'off',
     'react/jsx-no-useless-fragment': 'off',
     'no-restricted-globals': 'off',
