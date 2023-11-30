@@ -1,10 +1,18 @@
 {
+  "": "",
   "buttons": {
     "reload-page": "reload-page"
+  },
+  "main": {
+    "title": "title"
   },
   "notFound": {
     "title": "title"
   },
   "page-error": "page-error",
+  "pages": {
+    "about": "about",
+    "main": "main"
+  },
   "title": "title"
 }

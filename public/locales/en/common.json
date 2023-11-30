@@ -1,7 +1,12 @@
 {
-  "lang": "en",
+  "lang": "English",
+  "short-lang": "En",
   "page-error": "Somethimg went wrong",
   "buttons": {
     "reload-page": "Reload page"
+  },
+  "pages": {
+    "main": "Main",
+    "about": "About"
   }
 }
