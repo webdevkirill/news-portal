@@ -36,3 +36,11 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: test:unit
+      - name: build storybook
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: storybook:build
+      - name: test ui
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test:ui:ci
