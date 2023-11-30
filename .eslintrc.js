@@ -47,6 +47,7 @@ module.exports = {
     'react/jsx-wrap-multilines': 'off',
     'react/jsx-no-useless-fragment': 'off',
     'no-restricted-globals': 'off',
+    'wrap-iife': 'off',
   },
   globals: {
     __IS_DEV__: true,
