@@ -28,14 +28,17 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: lint:ts
+        if: always()
       - name: lint scss
         uses: borales/actions-yarn@v4
         with:
           cmd: lint:scss
+        if: always()
       - name: unit testing
         uses: borales/actions-yarn@v4
         with:
           cmd: test:unit
+        if: always()
       - name: build storybook
         uses: borales/actions-yarn@v4
         with:
