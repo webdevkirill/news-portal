@@ -20,3 +20,19 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install
+      - name: build production project
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build:prod
+      - name: lint typesctipt
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: lint:ts
+      - name: lint scss
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: lint:scss
+      - name: unit testing
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test:unit
