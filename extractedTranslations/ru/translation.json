@@ -3,6 +3,7 @@
   "buttons": {
     "reload-page": "reload-page"
   },
+  "log-in": "log-in",
   "main": {
     "title": "title"
   },

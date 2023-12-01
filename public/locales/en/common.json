@@ -8,5 +8,7 @@
   "pages": {
     "main": "Main",
     "about": "About"
-  }
+  },
+  "log-in": "Login",
+  "log-out": "Logout"
 }
